@@ -17,7 +17,7 @@ class Cluster(object):
         """
         self.remotes = {}
         if remotes is not None:
-            for remote, roles in remotes.iteritems():
+            for remote, roles in remotes:
                 self.add(remote, roles)
 
     def __repr__(self):
